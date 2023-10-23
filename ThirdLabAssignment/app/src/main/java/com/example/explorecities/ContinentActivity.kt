@@ -18,11 +18,10 @@ class ContinentActivity : AppCompatActivity() {
         cityRecyclerView = findViewById(R.id.cityRecyclerView)
         cityRecyclerView.layoutManager = LinearLayoutManager(this)
 
-        // Sample data for cities (replace with your own data)
+        
         val cities = mutableListOf(
             City("Paris", R.drawable.default_city_image, "77120456", "Marati"),
             City("Chennai", R.drawable.default_city_image, "Population 2", "Language 2"),
-            // Add more cities as needed
         )
 
         val adapter = CityAdapter(cities) { city ->
