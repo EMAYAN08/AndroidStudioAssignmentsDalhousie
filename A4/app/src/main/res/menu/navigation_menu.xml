@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/menu/navigation_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navProvinceInfo"
+        android:title="Province Info" />
+    <item
+        android:id="@+id/navCities"
+        android:title="Cities" />
+</menu>

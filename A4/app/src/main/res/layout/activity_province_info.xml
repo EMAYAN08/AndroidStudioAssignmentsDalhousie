@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_province_info.xml -->
+<!-- res/layout/activity_province_info.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerProvinceInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutProvinceInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/darker_gray" />
+
+</RelativeLayout>

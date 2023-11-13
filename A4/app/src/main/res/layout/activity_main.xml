@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/fragment_country_selection" />
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/country1"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="?attr/actionBarTheme" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <!-- Other UI components -->
+
+
+
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--        <FrameLayout-->
+            <!--            android:id="@+id/fragmentContainer"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_below="@id/toolbar">-->
+
+            <!--            &lt;!&ndash; Other UI components &ndash;&gt;-->
+
+            <!--            <ImageView-->
+            <!--                android:id="@+id/backgroundImage"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:scaleType="centerCrop"-->
+            <!--                android:src="@drawable/country1" />-->
+            <!--        </FrameLayout>-->
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/navigationView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+              app:menu="@menu/navigation_menu"/>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+    </FrameLayout>
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fragmentContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@id/toolbar">-->
+
+        <!-- Other UI components -->
+
+<!--    </FrameLayout>-->
+    <!-- Add your content here -->
+
+</RelativeLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--    &lt;!&ndash; activity_main.xml &ndash;&gt;-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+<!--<ImageView-->
+<!--    android:id="@+id/backgroundImage"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:scaleType="centerCrop"-->
+<!--    android:src="@drawable/country1"/>-->
+
+<!--<androidx.appcompat.widget.Toolbar-->
+<!--    android:id="@+id/toolbar"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="?attr/actionBarSize"-->
+<!--    android:layout_alignParentTop="true"-->
+<!--    android:background="?attr/colorPrimary"-->
+<!--    android:elevation="4dp"-->
+<!--    android:theme="?attr/actionBarTheme" />-->
+
+<!--<FrameLayout-->
+<!--    android:id="@+id/fragmentContainer"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_below="@id/toolbar">-->
+
+<!--    &lt;!&ndash; Other UI components &ndash;&gt;-->
+
+<!--</FrameLayout>-->
+
+<!--&lt;!&ndash; Add your content here &ndash;&gt;-->
+
+<!--</RelativeLayout>-->
